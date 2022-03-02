@@ -18,9 +18,16 @@ selectorElement.addEventListener('change', (event) => {
     
     if (selectedName === 'one') {
         //come back and use javascript function for array position 0
-        console.log(selectedName);
+        renderSelectedUserInfo(0);
     } else {
         //come back and use javascript function for array position 1
-        console.log(selectedName);
+        renderSelectedUserInfo(1);
     }
 });
+
+function renderSelectedUserInfo(index) {
+    nameHeader.textContent = 'Name: ' + people[index].name;
+    console.log(nameHeader.textContent);
+    shortBio.textContent = 'Short Bio: ' + people[index].short_bio;
+    age.textContent = 'Age: ' + people[index].age;
+}
