@@ -8,17 +8,31 @@
         <link rel="stylesheet" href="./styles/style.css" />
        
 
-        <title>Cool Web</title>
+        <title>About Us</title>
     </head>
 
     <body>
         <header>
-            <h1>Cool Web Project</h1>
+            <h1>About Us!</h1>
         </header>
 
-        <main></main>
+        <main>
+            <div>
+                <h1>Select one of us to learn more!</h1>
+                <select class="selector" name="name">
+                    <option value="one">Alonzo</option>
+                    <option value="two">Will</option>
+                </select>
+                <div class="container"> <!-- container for the selected person -->
+                    <h3 class="name"></h3>
+                    <p class='short-bio'></p>
+                    <span class="age"></span>
+                    <ul class="hobbies"></ul>
+                </div>
+            </div>
+        </main>
 
-        <footer>&copy; 2021 Aspiring Software Developer</footer>
+        <footer>&copy; 2021 Aspiring Software Developers</footer>
 
         <script type="module" src="./app.js"></script>
     </body>
