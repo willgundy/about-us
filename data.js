@@ -13,6 +13,6 @@ export const people = [
         name: 'Will',
         age: 28,
         hobbies: ['swimming', 'reading', 'cooking'],
-        short_bio: 'this is about will'
+        short_bio: 'Starting my journey towards becoming a programmer :)'
     },
 ];
