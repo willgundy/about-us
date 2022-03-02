@@ -16,7 +16,7 @@ const hobbies = document.querySelector('.hobbies');
 selectorElement.addEventListener('change', (event) => {
     const selectedName = event.target.value;
     hobbies.innerHTML = '';
-    container.classList.remove('Alonzo', "Will");
+    container.classList.remove('Alonzo', 'Will');
     if (selectedName === 'one') {
         //come back and use javascript function for array position 0
         renderSelectedUserInfo(0);
