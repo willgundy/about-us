@@ -6,7 +6,7 @@ export const people = [
         name: 'Alonzo',
         age: 24,
         hobbies: ['coding', 'gaming', 'learning electron'],
-        short_bio: 'this is about alonzo',
+        short_bio: 'US Veteran, Computer Science Student',
     },
     {
         id: 2,
