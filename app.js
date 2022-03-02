@@ -15,7 +15,7 @@ const hobbies = document.querySelector('.hobbies');
     // update DOM to reflect the new state
 selectorElement.addEventListener('change', (event) => {
     const selectedName = event.target.value;
-    
+    hobbies.innerHTML = '';
     if (selectedName === 'one') {
         //come back and use javascript function for array position 0
         renderSelectedUserInfo(0);
@@ -26,8 +26,13 @@ selectorElement.addEventListener('change', (event) => {
 });
 
 function renderSelectedUserInfo(index) {
+    container.classList.add(`${people[index].name}`);
     nameHeader.textContent = 'Name: ' + people[index].name;
-    console.log(nameHeader.textContent);
     shortBio.textContent = 'Short Bio: ' + people[index].short_bio;
     age.textContent = 'Age: ' + people[index].age;
+    for (let hobby of people[index].hobbies) {
+        const li = document.createElement('li');
+        li.textContent = hobby;
+        hobbies.appendChild(li); 
+    }
 }
